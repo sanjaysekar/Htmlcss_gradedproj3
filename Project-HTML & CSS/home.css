@@ -1,0 +1,193 @@
+body{
+    height: 100%;
+    margin: 10px;
+    padding: 0;
+    border: 2px solid black;
+}
+header{
+    background-color: #7F7F7F;
+}
+header h1{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    font-size: 50px;
+}
+.navigation {
+    top: 0;
+    position: sticky;
+    z-index: 1;   
+}
+.menu{
+    background-color: darkgray;
+    margin: 0;
+}
+.menu li{
+    display: inline-block;
+    padding: 10px;
+}
+.menu li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.menu li:hover{
+    background-color: black;
+}
+
+.dropdown{
+    position: absolute;
+    background-color: #F5F5F5;
+    max-width: 150px; 
+    top: 42px;
+    display: none;
+    padding: 0;  
+}
+.dropdown li{
+    display: block;
+}
+.dropdown li a{
+    color: #7FA6CA;
+    font-size: 16px;
+}
+.menu li:nth-child(2):hover .dropdown,
+.menu li:nth-child(3):hover .dropdown{
+    display: block;
+
+}
+.dropdown li:hover{
+    background-color: gainsboro;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    top: 100%;
+    margin: 0px;
+    padding: 10px;
+    width: 99%;
+}
+#dcare,#covidcare{
+    margin: 10px;
+    /* overflow-x: auto;  */ 
+    white-space: nowrap;
+     overflow-x: scroll;  
+}
+.protection{
+    position:Relative;
+    margin:25px;
+    width:17.5vw;
+    height:45vh;
+    display:inline-block;
+    padding:1.5vw;
+    padding-top:2vh;
+    background-color:rgba(173, 215, 235, 0.2);
+}
+.protection:hover{
+   
+    width:20vw;
+    height:50vh;
+    cursor: pointer;
+    
+}
+.protection img{
+    border-radius:10px;
+    width:15vw;
+    height:25vh;
+    align-self:center;
+}
+.descp{
+    font-size:1em;
+    color: steelblue;
+}
+.pname{
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+.button{
+    background-color: rgba(83,157,218,0.2);
+    border: solid 2px rgb(87, 75, 218);
+    font-weight: bolder;
+    border-radius:10px;
+    width:12vw;
+    padding:1vh 1vw;
+    text-align:center;
+    text-decoration:none;
+    display: inline-block;
+    font-size:1em;
+    margin-top:3vh;
+    color: orange;
+}
+.button:active{
+    border: rgb(0,255,76);
+    background-color: rgb(250,234,230);
+    cursor: pointer;
+}
+h4{
+    font-size:1em;
+    padding:0px;
+    margin-top:0vh;
+}
+h1{
+    font-size:25px;
+    padding:0px;
+    margin-top:0vh;
+}
+
+
+#slider{
+    overflow: hidden;
+    border: 2px solid steelblue;
+    margin: 2px;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0%;
+    left: 0%;
+    animation: slider 20s infinite;
+}
+#slider figure img{
+    width: 20%;
+    height: 550px;
+    float: left;
+}
+@keyframes slider{
+    0%{
+        left: 0%;
+    }
+    20%{
+        left: 0%;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -200%;
+    }
+    80%{
+        left: -300%;
+    }
+    85%{
+        left: -300%;
+    }
+    95%{
+        left: -400%;
+    }
+    100%{
+        left: -400%;
+    }
+
+}
+

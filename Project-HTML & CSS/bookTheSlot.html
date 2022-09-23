@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bookTheSlot.css">
+    <title>Booking form</title>
+</head>
+
+<body>
+    <section>
+
+        <form action="bookTheSlot.html">
+            <div>
+                <aside>
+                    <img src="Images/Lab-Test/lab-test.jpg" alt="">
+                </aside>
+            </div>
+            <ol>
+
+                <li>Your Contact Details</li>
+                <input type="text" title="name" required spellcheck="true" placeholder="Full Name">
+                <input type="number" title="Id" placeholder="patient Id if exists">
+                <hr>
+                <br>
+                <input type="number" title="number" min="6000000000" max="9999999999" placeholder="Contact Number"
+                    required>
+                <input type="email" title="email" placeholder="Email Id">
+                <hr>
+
+                <li>Address</li>
+                <input type="number" title="number" placeholder="H-No" required>
+                <input type="text" title="street" placeholder="Street" required>
+                <hr>
+                </br>
+                <input type="text" title="area" placeholder="Area" required>
+                <hr>
+                </br>
+                <h3>District</h3>
+                <select name="" id="district">
+                    <option value="">Choose</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Calicut">Calicut</option>
+                </select>
+
+                <li>Choose the Test Type</li>
+                <p>(Check atleast one box without fail)</p>
+                <input type="checkbox" id="c1" name="option1" value="CBC">
+                <label for="c1">CBC</label>
+                <br>
+                <input type="checkbox" id="c2" name="option2" value="Complete Urine">
+                <label for="c2">Complete Urine</label>
+                <br>
+                <input type="checkbox" id="c1" name="option1" value="CBC">
+                <label for="c3">Lipid Profile</label>
+                <br>
+                <input type="checkbox" id="c4" name="option4" value="Thyroid Stimulating Hormone(TSH)">
+                <label for="c4">Thyroid Stimulating Hormone(TSH)</label>
+                <br>
+                <input type="checkbox" id="c5" name="option5" value="Glucose Test">
+                <label for="c5">Glucose Test</label>
+                <br>
+
+                <li>Do you want a hard copy of the report also?</li>
+                <input type="radio" id="r1" name="option" value="True" required>
+                <label for="r1">Yes</label>
+                <br>
+                <input type="radio" id="r2" name="option" value="False">
+                <label for="r2">No</label>
+
+                <li>Select Your Comfortable Date and Time</li>
+                <input type="datetime-local" value="datetime-local" required>
+
+            </ol>
+            <div id="button">
+                <button>Reset</button>
+                <button>Submitt</button>
+            </div>
+        </form>
+
+    </section>
+</body>
+
+</html>
